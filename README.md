@@ -1,10 +1,10 @@
 
-# Deploy water classifier using flask on heroku
+# Deploy Dog classifier using flask on heroku
 
 [![](https://img.shields.io/badge/python-3.5%2B-green.svg)]()
 
 
-> A web app to predict whether water is clean or dirty using fastai library.
+> A web app to predict Dog classifer(jump/sleep/swimm) using fastai library.
 
 ------------------
 

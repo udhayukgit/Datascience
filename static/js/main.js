@@ -45,6 +45,10 @@ $(document).ready(function () {
                 // Get and display the result
                 $('.loader').hide();
                 $('#result').fadeIn(600);
+                if (data == 'dog_activity' || data=='dogs_activity')
+                {
+                    data = 'dog_jump'
+                }
                 $('#result').text(' Model Predict the Dog as:  ' + data);
                 console.log('Success!');
             },
