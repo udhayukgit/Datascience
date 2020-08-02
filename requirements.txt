@@ -2,7 +2,5 @@
 Flask==1.1.2
 gunicorn
 numpy==1.19.0
-fastai==1.0.61
-pip uninstall torch
-
-
+git+https://github.com/fastai/fastai.git
+#pip install --no-deps fastai==1.0.61
