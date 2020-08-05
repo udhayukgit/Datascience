@@ -45,11 +45,19 @@ $(document).ready(function () {
                 // Get and display the result
                 $('.loader').hide();
                 $('#result').fadeIn(600);
-                if (data == 'dog_activity' || data=='dogs_activity')
+                if (data == 'dog_activity' || data=='dogs_activity' || data== 'dog_jumping')
                 {
-                    data = 'dog_jump'
+                    data = 'Dog is Jump'
                 }
-                $('#result').text(' Model Predict the Dog as:  ' + data);
+                if (data == 'dog_swimming')
+                {
+                    data = 'Dog is Swim'
+                }
+                if (data == 'dog_sleeping')
+                {
+                    data = 'Dog is Sleep'
+                }
+                $('#result').text('Predict the Dog as:  ' + data);
                 console.log('Success!');
             },
         });
