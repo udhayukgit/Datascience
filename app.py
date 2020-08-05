@@ -20,7 +20,7 @@ from werkzeug.utils import secure_filename
 # Define a flask app
 app = Flask(__name__)
 
-
+defaults.device = torch.device('cpu')
 
 path = Path("path/models")
 learn = load_learner(path)
@@ -35,7 +35,6 @@ def model_predict(img_path):
     pred_class,pred_idx,outputs = learn.predict(img)
     return pred_class.obj
     
-
 
 
 
